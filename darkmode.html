@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button id="btn1"> click here for change mode</button>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod non similique facere dicta sed repellat quo eveniet. Rem iste sed temporibus quis impedit incidunt? Ex inventore illum excepturi a dignissimos nihil possimus, doloremque mollitia necessitatibus quidem animi labore asperiores. Ipsum at, id exercitationem impedit aliquid dicta perferendis voluptatum quasi cumque!
+
+    </p>
+
+
+
+
+
+    <script>
+        let button=document.querySelector("#btn1");
+        let mode="light";
+        let para=document.querySelector("p");
+        button.addEventListener("click",()=>{
+    if(mode==="light")
+  {  mode="dark";
+document.querySelector("body").style.backgroundColor="black";
+para.style.color="white"
+}
+else{
+mode="light"
+document.querySelector("body").style.backgroundColor="white";
+para.style.color="black"
+}
+});
+    </script>
+</body>
+</html>
